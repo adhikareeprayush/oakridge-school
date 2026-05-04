@@ -2,6 +2,9 @@
 
 A modern, responsive landing page for an educational platform built with React, TypeScript, and Tailwind CSS.
 
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/4ca33a75-db85-4372-8539-9c6af4b29066" />
+
+
 
 ## 🎯 Overview
 
