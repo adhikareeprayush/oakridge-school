@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SITE_SUPPORT_EMAIL } from "../constants/site";
 import { HiMiniChevronDown, HiMiniChevronUp } from "react-icons/hi2";
 
 const faqData = [
@@ -30,7 +31,7 @@ const faqData = [
   {
     question: "How can I contact support?",
     answer:
-      "You can reach our support team via email at support@brandname.com, through our live chat feature, or by calling our helpline. We're available 24/7 to assist you.",
+      `You can reach our support team via email at ${SITE_SUPPORT_EMAIL}, through our live chat feature, or by calling our helpline. We're available 24/7 to assist you.`,
   },
 ];
 

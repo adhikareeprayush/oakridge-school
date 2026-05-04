@@ -1,44 +1,77 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="grid xl:grid-cols-5 lg:grid-cols-3 gap-[24px] md:grid-cols-3 w-full">
+    <footer className="page-container grid w-full gap-[24px] border-t border-lightGray2 py-14 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
       <div className="col-span-1 flex flex-col gap-[20px]">
         <h5 className="text-text">Company Info</h5>
         <div className="flex flex-col gap-[10px]">
-          <h6 className="text-secondText">About Us</h6>
-          <h6 className="text-secondText">Carrier</h6>
-          <h6 className="text-secondText">We are hiring</h6>
-          <h6 className="text-secondText">Blog</h6>
+          <Link to="/about" className="text-secondText">
+            About Us
+          </Link>
+          <Link to="/" className="text-secondText">
+            Careers
+          </Link>
+          <Link to="/" className="text-secondText">
+            We are hiring
+          </Link>
+          <Link to="/" className="text-secondText">
+            Blog
+          </Link>
         </div>
       </div>
       <div className="col-span-1 flex flex-col gap-[20px]">
         <h5 className="text-text">Legal</h5>
         <div className="flex flex-col gap-[10px]">
-          <h6 className="text-secondText">About Us</h6>
-          <h6 className="text-secondText">Carrier</h6>
-          <h6 className="text-secondText">We are hiring</h6>
-          <h6 className="text-secondText">Blog</h6>
+          <Link to="/pricing" className="text-secondText">
+            Terms
+          </Link>
+          <Link to="/" className="text-secondText">
+            Privacy
+          </Link>
+          <Link to="/" className="text-secondText">
+            Security
+          </Link>
+          <Link to="/" className="text-secondText">
+            Sitemap
+          </Link>
         </div>
       </div>
       <div className="col-span-1 flex flex-col gap-[20px]">
         <h5 className="text-text">Features</h5>
         <div className="flex flex-col gap-[10px]">
-          <h6 className="text-secondText">Business Marketing</h6>
-          <h6 className="text-secondText">User Analytic</h6>
-          <h6 className="text-secondText">Live Chat</h6>
-          <h6 className="text-secondText">Unlimited Support</h6>
+          <Link to="/courses" className="text-secondText">
+            Business Marketing
+          </Link>
+          <Link to="/courses" className="text-secondText">
+            User Analytics
+          </Link>
+          <Link to="/" className="text-secondText">
+            Live Chat
+          </Link>
+          <Link to="/" className="text-secondText">
+            Unlimited Support
+          </Link>
         </div>
       </div>
       <div className="col-span-1 flex flex-col gap-[20px]">
         <h5 className="text-text">Resources</h5>
         <div className="flex flex-col gap-[10px]">
-          <h6 className="text-secondText">IOS & Android</h6>
-          <h6 className="text-secondText">Watch a Demo</h6>
-          <h6 className="text-secondText">Customers</h6>
-          <h6 className="text-secondText">API</h6>
+          <Link to="/" className="text-secondText">
+            IOS & Android
+          </Link>
+          <Link to="/" className="text-secondText">
+            Watch a Demo
+          </Link>
+          <Link to="/" className="text-secondText">
+            Customers
+          </Link>
+          <Link to="/" className="text-secondText">
+            API
+          </Link>
         </div>
       </div>
       <div className="col-span-1 flex flex-col gap-[20px]">
@@ -60,7 +93,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 

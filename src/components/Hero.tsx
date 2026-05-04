@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../assets/heroBg.svg";
 import HeroCard from "./Reuseable/HeroCard";
 import { GiGraduateCap } from "react-icons/gi";
@@ -13,13 +14,19 @@ const Hero = () => {
         <h4 className="text-secondText">
           Every day brings with it a fresh set of learning possibilities.
         </h4>
-        <div className="flex items-center gap-[10px]">
-          <button className="px-[40px] py-[15px] bg-primary border-[1px] border-primary text-white font-bold rounded-[5px]">
-            Get Quote Now
-          </button>
-          <button className="px-[40px] py-[15px] border-[1px] border-primary text-primary font-bold rounded-[5px]">
-            Learn More
-          </button>
+        <div className="flex flex-wrap items-center gap-[10px]">
+          <Link
+            to="/signup"
+            className="rounded-[5px] border-[1px] border-primary bg-primary px-[40px] py-[15px] font-bold text-white"
+          >
+            Get started
+          </Link>
+          <Link
+            to="/courses"
+            className="rounded-[5px] border-[1px] border-primary px-[40px] py-[15px] font-bold text-primary"
+          >
+            Browse courses
+          </Link>
         </div>
       </div>
       <img

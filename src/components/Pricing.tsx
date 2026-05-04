@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaCheck } from "react-icons/fa6";
 
 const pricingPlans = [
@@ -131,13 +132,14 @@ const Pricing = () => {
                 </div>
               ))}
             </div>
-            <button
-              className={`mt-[30px] px-[40px] py-[15px] font-bold rounded-[5px] w-full ${
+            <Link
+              to={plan.name === "Enterprise" ? "/contact" : "/signup"}
+              className={`mt-[30px] block w-full rounded-[5px] px-[40px] py-[15px] text-center font-bold ${
                 plan.popular ? "bg-white text-primary" : "bg-primary text-white"
               }`}
             >
               {plan.buttonText}
-            </button>
+            </Link>
           </div>
         ))}
       </div>
