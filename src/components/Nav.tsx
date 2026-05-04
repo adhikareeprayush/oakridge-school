@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useMockAuth } from "../hooks/useMockAuth";
-import { SITE_NAME } from "../constants/site";
+import { LogoLockup } from "./Logo";
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   [
@@ -44,9 +44,11 @@ const Nav = () => {
   return (
     <nav className="sticky top-0 z-50 border-b border-lightGray2 bg-white/95 backdrop-blur-sm">
       <div className="flex w-full items-center justify-between px-[16px] py-[16px] md:px-[60px] lg:px-[100px] xl:px-[200px]">
-        <Link to="/" className="text-lg font-bold text-text md:text-xl">
-          {SITE_NAME}
-        </Link>
+        <LogoLockup
+          size="md"
+          wordmarkClassName="text-lg md:text-xl"
+          className="max-w-[min(100%,240px)]"
+        />
 
         <div className="hidden items-center gap-6 lg:flex">{links}</div>
 

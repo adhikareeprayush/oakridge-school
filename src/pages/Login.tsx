@@ -6,6 +6,7 @@ import { FaGoogle, FaFacebookF } from "react-icons/fa";
 import { dashboardPathForRole } from "../auth/dashboardPaths";
 import { useMockAuth } from "../hooks/useMockAuth";
 import { SITE_NAME } from "../constants/site";
+import { LogoMark } from "../components/Logo";
 import type { UserRole } from "../types/models";
 
 const Login = () => {
@@ -30,6 +31,13 @@ const Login = () => {
       <div className="page-container flex justify-center">
         <div className="w-full max-w-md rounded-2xl border border-lightGray2 bg-white p-8 accentuedDropShadow">
           <div className="mb-6 text-center">
+            <Link
+              to="/"
+              className="mb-4 inline-flex justify-center transition hover:opacity-90"
+              aria-label={`${SITE_NAME} home`}
+            >
+              <LogoMark size="lg" decorative />
+            </Link>
             <h2 className="text-3xl font-extrabold text-text">Welcome back</h2>
             <p className="mt-2 text-secondText">Sign in to continue to {SITE_NAME}</p>
           </div>

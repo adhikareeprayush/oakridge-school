@@ -2,11 +2,13 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
 import { FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { LogoLockup } from "./Logo";
 
 const Footer = () => {
   return (
     <footer className="page-container grid w-full gap-[24px] border-t border-lightGray2 py-14 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5">
       <div className="col-span-1 flex flex-col gap-[20px]">
+        <LogoLockup size="sm" wordmarkClassName="text-base text-text" className="w-fit" />
         <h5 className="text-text">Company Info</h5>
         <div className="flex flex-col gap-[10px]">
           <Link to="/about" className="text-secondText">

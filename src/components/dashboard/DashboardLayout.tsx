@@ -24,7 +24,8 @@ import type { UserRole } from "../../types/models";
 import { dashboardPathForRole } from "../../auth/dashboardPaths";
 import { useMockAuth } from "../../hooks/useMockAuth";
 import { isDashboardNavActive } from "./dashNav";
-import { SITE_NAME, SITE_SHORT } from "../../constants/site";
+import { SITE_NAME } from "../../constants/site";
+import { LogoMark } from "../Logo";
 
 interface NavItem {
   to: string;
@@ -152,9 +153,7 @@ const DashboardLayout = ({ role, title, subtitle, children }: DashboardLayoutPro
           onClick={opts.onNavigate}
           className="group flex min-w-0 items-center gap-2.5"
         >
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary text-sm font-bold text-white shadow-md ring-1 ring-white/20">
-            {SITE_SHORT.charAt(0)}
-          </span>
+          <LogoMark size="md" decorative className="shadow-md ring-1 ring-white/20 rounded-[11px]" />
           <div className="min-w-0 leading-tight">
             <span className="block truncate text-sm font-bold tracking-tight text-white">
               {SITE_NAME}
